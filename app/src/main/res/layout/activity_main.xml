@@ -7,14 +7,17 @@
         android:layout_height="100dp"
         android:hint="Type value"
         android:inputType="numberDecimal"
+        android:textSize="50sp"
         android:id="@+id/input"/>
 
-    <TextView
+    <me.grantland.widget.AutofitTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/input"
         android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:singleLine="true"
         android:text="Converted value"/>
 
 </RelativeLayout>
