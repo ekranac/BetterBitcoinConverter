@@ -1,4 +1,4 @@
-package com.ziga.bitcoinconverter;
+package activities;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+
+import com.ziga.bitcoinconverter.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        // Show keyboard
+        // Show keyboard on start
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
 
     }

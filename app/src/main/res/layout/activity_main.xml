@@ -2,19 +2,38 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context=".MainActivity">
 
-    <EditText
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
-        android:hint="Type value"
-        android:inputType="numberDecimal"
-        android:textSize="50sp"
-        android:id="@+id/input"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/wrapper">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:hint="Type value"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:textSize="50sp"
+            android:id="@+id/input"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="70sp"
+            android:text="€"
+            android:id="@+id/tv_unit"/>
+
+    </LinearLayout>
+
+
 
     <me.grantland.widget.AutofitTextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/input"
+        android:gravity="center"
+        android:layout_below="@id/wrapper"
         android:layout_marginTop="50dp"
         android:textSize="30sp"
         android:singleLine="true"
