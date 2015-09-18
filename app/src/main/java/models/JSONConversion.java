@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class JSONConversion
 {
-    @SerializedName("5m")
+    @SerializedName("15m")
     public Double last_five_minutes;
     public Double last;
     public Double buy;

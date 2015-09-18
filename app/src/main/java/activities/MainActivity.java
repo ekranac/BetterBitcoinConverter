@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         api.getFeed(new Callback<JSONResponse>() {
             @Override
             public void success(JSONResponse jsonResponse, Response response) {
-                // input.setText(jsonResponse.ISK.symbol);
+                // input.setText(jsonResponse.USD.buy.toString());
             }
 
             @Override
