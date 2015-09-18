@@ -1,6 +1,31 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/currency_settings" android:title="@string/currency" app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/unit_usd" android:title="@string/unit_usd"/>
+            <item android:id="@+id/unit_isk" android:title="@string/unit_isk"/>
+            <item android:id="@+id/unit_hkd" android:title="@string/unit_hkd"/>
+            <item android:id="@+id/unit_twd" android:title="@string/unit_twd"/>
+            <item android:id="@+id/unit_chf" android:title="@string/unit_chf"/>
+            <item android:id="@+id/unit_eur" android:title="@string/unit_eur"/>
+            <item android:id="@+id/unit_dkk" android:title="@string/unit_dkk"/>
+            <item android:id="@+id/unit_clp" android:title="@string/unit_clp"/>
+            <item android:id="@+id/unit_cad" android:title="@string/unit_cad"/>
+            <item android:id="@+id/unit_cny" android:title="@string/unit_cny"/>
+            <item android:id="@+id/unit_thb" android:title="@string/unit_thb"/>
+            <item android:id="@+id/unit_aud" android:title="@string/unit_aud"/>
+            <item android:id="@+id/unit_sgd" android:title="@string/unit_sgd"/>
+            <item android:id="@+id/unit_krw" android:title="@string/unit_krw"/>
+            <item android:id="@+id/unit_jpy" android:title="@string/unit_jpy"/>
+            <item android:id="@+id/unit_pln" android:title="@string/unit_pln"/>
+            <item android:id="@+id/unit_gbp" android:title="@string/unit_gbp"/>
+            <item android:id="@+id/unit_sek" android:title="@string/unit_sek"/>
+            <item android:id="@+id/unit_nzd" android:title="@string/unit_nzd"/>
+            <item android:id="@+id/unit_brl" android:title="@string/unit_brl"/>
+            <item android:id="@+id/unit_rub" android:title="@string/unit_rub"/>
+        </menu>
+    </item>
+
 </menu>

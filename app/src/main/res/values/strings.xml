@@ -1,4 +1,28 @@
 <resources>
     <string name="app_name">Bitcoin Converter</string>
-    <string name="action_settings">Settings</string>
+
+    <string name="currency">Currency</string>
+
+    <string name="unit_usd">USD</string>
+    <string name="unit_isk">ISK</string>
+    <string name="unit_hkd">HKD</string>
+    <string name="unit_twd">TWD</string>
+    <string name="unit_chf">CHF</string>
+    <string name="unit_eur">EUR</string>
+    <string name="unit_dkk">DKK</string>
+    <string name="unit_clp">CLP</string>
+    <string name="unit_cad">CAD</string>
+    <string name="unit_cny">CNY</string>
+    <string name="unit_thb">THB</string>
+    <string name="unit_aud">AUD</string>
+    <string name="unit_sgd">SGD</string>
+    <string name="unit_krw">KRW</string>
+    <string name="unit_jpy">JPY</string>
+    <string name="unit_pln">PLN</string>
+    <string name="unit_gbp">GBP</string>
+    <string name="unit_sek">SEK</string>
+    <string name="unit_nzd">NZD</string>
+    <string name="unit_brl">BRL</string>
+    <string name="unit_rub">RUB</string>
+
 </resources>
