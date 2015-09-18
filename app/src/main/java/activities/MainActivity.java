@@ -2,7 +2,6 @@ package activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
@@ -10,20 +9,11 @@ import android.widget.EditText;
 
 import com.ziga.bitcoinconverter.R;
 
-import org.json.JSONObject;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import interfaces.APIInterface;
-import models.JSONResponse;
-import retrofit.Callback;
-import retrofit.RestAdapter;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
+import helpers.APIHelper;
 
 public class MainActivity extends AppCompatActivity {
-
-    public static final String BASE_URL = "https://blockchain.info";
 
     @Bind(R.id.input) EditText input;
 
@@ -37,22 +27,7 @@ public class MainActivity extends AppCompatActivity {
         // Show keyboard on start
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
 
-        RestAdapter adapter = new RestAdapter.Builder()
-                .setEndpoint(BASE_URL)
-                .build();
-
-        APIInterface api = adapter.create(APIInterface.class);
-        api.getFeed(new Callback<JSONResponse>() {
-            @Override
-            public void success(JSONResponse jsonResponse, Response response) {
-                // input.setText(jsonResponse.USD.buy.toString());
-            }
-
-            @Override
-            public void failure(RetrofitError error) {
-
-            }
-        });
+        APIHelper.getApiData();
 
     }
 

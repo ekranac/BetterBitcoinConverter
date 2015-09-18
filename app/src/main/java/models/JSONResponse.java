@@ -23,4 +23,6 @@ public class JSONResponse
     public JSONConversion NZD;
     public JSONConversion BRL;
     public JSONConversion RUB;
+
+
 }
