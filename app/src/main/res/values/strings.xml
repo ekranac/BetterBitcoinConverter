@@ -25,4 +25,9 @@
     <string name="unit_brl">BRL</string>
     <string name="unit_rub">RUB</string>
 
+    <string name="unit_btc">BTC</string>
+    <string name="symbol_btc">฿</string>
+
+    <string name="symbol_usd">$</string>
+
 </resources>

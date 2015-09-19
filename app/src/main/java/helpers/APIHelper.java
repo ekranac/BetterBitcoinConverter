@@ -27,16 +27,17 @@ public class APIHelper
                 .build();
 
         APIInterface api = adapter.create(APIInterface.class);
-        api.getFeed(new Callback<JSONResponse>() {
+        api.getFeed(new Callback<JSONResponse>()
+        {
             @Override
-            public void success(JSONResponse jsonResponse, Response response) {
-                Log.i("USD", jsonResponse.USD.last_five_minutes.toString());
-                // TODO save to SharedPreferences
+            public void success(JSONResponse jsonResponse, Response response)
+            {
                 saveConversionsData(activity, jsonResponse);
             }
 
             @Override
-            public void failure(RetrofitError error) {
+            public void failure(RetrofitError error)
+            {
                 Log.e("ERROR", error.toString());
             }
         });

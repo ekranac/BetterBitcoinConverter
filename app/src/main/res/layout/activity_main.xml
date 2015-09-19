@@ -21,8 +21,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="70sp"
-            android:text="€"
+            android:textSize="60sp"
+            android:text="$"
             android:id="@+id/tv_unit"/>
 
     </LinearLayout>
@@ -37,6 +37,7 @@
         android:layout_marginTop="50dp"
         android:textSize="30sp"
         android:singleLine="true"
-        android:text="Converted value"/>
+        android:text="Converted value"
+        android:id="@+id/tv_converted_value"/>
 
 </RelativeLayout>
