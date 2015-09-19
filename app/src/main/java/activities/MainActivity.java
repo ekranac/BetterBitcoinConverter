@@ -1,6 +1,7 @@
 package activities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -74,6 +75,11 @@ public class MainActivity extends AppCompatActivity
                 @Override
                 public void afterTextChanged(Editable editable) {}
             });
+        }
+        else // If user is running app for the first time without network connection
+        {
+            Intent intent = new Intent(MainActivity.this, NoConnectionActivity.class);
+            startActivity(intent);
         }
 
         tvUnit.setOnClickListener(new View.OnClickListener() {
