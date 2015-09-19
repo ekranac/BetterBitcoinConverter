@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity
                 @Override
                 public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
                 {
+                    // Preform conversion everytime the value in EditText is changed
                     if(!charSequence.toString().equals(""))
                     {
                         ConversionHelper.convertValues(MainActivity.this);
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity
                 public void afterTextChanged(Editable editable) {}
             });
         }
-        else // If user is running app for the first time without network connection
+        else // If user is running app for the first time without network connection- can't parse conversion data
         {
             Intent intent = new Intent(MainActivity.this, NoConnectionActivity.class);
             startActivity(intent);
@@ -141,8 +142,6 @@ public class MainActivity extends AppCompatActivity
             }
 
         }
-
-
 
         return super.onOptionsItemSelected(item);
     }

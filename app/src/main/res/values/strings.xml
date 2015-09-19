@@ -29,5 +29,8 @@
     <string name="symbol_btc">฿</string>
 
     <string name="symbol_usd">$</string>
+    <string name="no_connection_message">I\'m sorry, but I need you to connect to the internet so you can get current conversion rates :)</string>
+    <string name="refresh_btn">REFRESH</string>
+    <string name="input_hint">Enter value</string>
 
 </resources>

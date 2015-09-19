@@ -107,16 +107,6 @@ public class ConversionHelper
         return conversion;
     }
 
-    public static Double getValueInSelectedCurrency(Double inputValue, JSONConversion conversion)
-    {
-        return inputValue*conversion.last_fifteen_minutes;
-    }
-
-    public static Double getValueInBTC(Double inputValue, JSONConversion conversion)
-    {
-        return inputValue/conversion.last_fifteen_minutes;
-    }
-
     public static void convertValues(Activity activity)
     {
         TextView tvUnit = (TextView) activity.findViewById(R.id.tv_unit);
@@ -132,5 +122,18 @@ public class ConversionHelper
         {
             tvConvertedValue.setText(Double.toString(ConversionHelper.getValueInSelectedCurrency(inputValue, MainActivity.selectedCurrency)) + " " + MainActivity.selectedCurrency.symbol);
         }
+    }
+
+
+    public static Double getValueInSelectedCurrency(Double inputValue, JSONConversion conversion)
+    {
+        // BTC -> Selected currency
+        return inputValue*conversion.last_fifteen_minutes;
+    }
+
+    public static Double getValueInBTC(Double inputValue, JSONConversion conversion)
+    {
+        // Selected currency -> BTC
+        return inputValue/conversion.last_fifteen_minutes;
     }
 }
